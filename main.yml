@@ -1,0 +1,6 @@
+- name: Golden Image
+  hosts: all
+  become: yes
+  roles:
+    - rhel9-hardended
+

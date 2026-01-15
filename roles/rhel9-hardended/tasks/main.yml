@@ -1,0 +1,8 @@
+- name: Complete package update
+  ansible.builtin.dnf:
+    name: "*"
+    state: latest
+
+- name: Install SSM agent
+  ansible.builtin.shell: dnf install https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm -y
+
